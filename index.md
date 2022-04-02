@@ -1,6 +1,6 @@
 ---
 ---
-@import "main.css";
+@import "{{ site.theme }}";
 
 Taught by Drshika Asher, Justin Hu, and Joanna Huang
 
