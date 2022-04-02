@@ -1,29 +1,6 @@
----
----
-<style>
-a[href="#spoiler"] {
-    text-decoration: none !important;
-    cursor: default;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #FFF8DC;
-    border-left: 2px solid #ffeb8e;
-    display: inline-block;
-}
-a[href="#spoiler"]::after {
-    content: attr(title);
-    color: #FFF8DC;
-    padding: 0 0.5em;
-}
-a[href="#spoiler"]:hover::after,
-a[href="#spoiler"]:active::after {
-    cursor: auto;
-    color: black;
-    transition: color .5s ease-in-out;
-}
-</style>
-
-Taught by Drshika Asher, Justin Hu, and Joanna Huang
+Taught by Drshika Asher, Justin Hu, and Joanna Huang   
+[Slides](https://docs.google.com/presentation/d/1swCUmvOgFk4MBFTKbdqHP_Ru9Rez_2aVAcyCwOCLYN8/edit?usp=sharing)  
+[Starter Code](https://github.com/drshika/gjournal)
 
 ------------------------------------------
 
@@ -32,6 +9,7 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 ### Local Machine Instructions
 
 1. Download a **text editor** (VSCode: https://code.visualstudio.com/download) and make sure you have a version of **python** greater than 3.0 and https://pip.pypa.io/en/stable/installation/ installed. To check your Python version, run the following command:
+
 ```bash
    $  python --version
 ```
@@ -39,17 +17,21 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 - Tutorial for Mac: https://www.educative.io/edpresso/how-to-add-python-to-the-path-variable-in-mac
 - Install Pip: https://pip.pypa.io/en/stable/installation/
 2. Clone starter code
+
 ```bash
     $ git clone https://github.com/drshika/gjournal.git
 ```
 3. Open the folder in VSCode
+
 ```bash
     $ code .
 ```
 or open VSCode, File >> Open Folder >> choose the gjournal directory
 
 ![open in vscode](assets/images/vscodeimport.png)
+
 4. Install requirements
+
 Run the following in your terminal
 ```bash
     $ pip install -r requirements.txt
