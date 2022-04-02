@@ -48,7 +48,7 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 ```
 or open VSCode, File >> Open Folder >> choose the gjournal directory
 
-![open in vscode](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/vscodeimport.png?raw=true)
+![open in vscode](assets/images/vscodeimport.png)
 4. Install requirements
 Run the following in your terminal
 ```bash
@@ -64,8 +64,8 @@ Run the following in your terminal
 Just in case your local machine does not work for some reason.
 1. Log onto your [https://replit.com/~](https://replit.com/~)
 2. Create Repl 
-![create repl](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl.png?raw=true)
-![create repl pt 2](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl2.png?raw=true)
+![create repl](assets/images/createrepl.png)
+![create repl pt 2](assets/images/createrepl2.png)
 3. Install requirements
 Run the following in your console
 ```bash
@@ -189,12 +189,10 @@ We get a `FileExistsErrors`! Can you guess what is causing the error?
 
 In professional programming, we like to handle errors nicely and not rely on the compiler to catch our mistakes. So how do we make the error message more helpful?
 
-[Hint 1](#spoiler How do we handle errors in Python?)
-
-[Hint 2](#spoiler What kind of error is this?)
-
-[Hint 3](#spoiler If you have no clue how to do something, google! StackOverflow is a really valuable resource. Here's a link to get you started:   
-[https://stackoverflow.com/questions/4592162/python-exception-handling](https://stackoverflow.com/questions/4592162/python-exception-handling))
+<p><a href="#spoiler How do we handle errors in Python?">Hint 1</a></p>
+<p><a href="#spoiler What kind of error is this?">Hint 2</a></p>
+<p><a href="#spoiler If you have no clue how to do something, google! StackOverflow is a really valuable resource. Here&#39;s a link to get you started:   
+[https://stackoverflow.com/questions/4592162/python-exception-handling](https://stackoverflow.com/questions/4592162/python-exception-handling">Hint 3</a>)</p>
 
 **Test Case #2: Writing Entries**
 
@@ -204,14 +202,11 @@ Try the following:
 
 What??? I'm getting a `io.UnsupportedOperation: not writable` error?
 
-[Hint 1](#spoiler What flags can you specify in the open function?)
-
-[Hint 2](#spoiler In our example code, we specified the flag `r`. What does this mean?)
-
-[Hint 3](#spoiler What flag could we use to represent write?)
-
-[Hint 4](#spoiler Time to go back to google. Geeks4Geeks sometimes has good information:   
-[https://www.geeksforgeeks.org/python-open-function/](https://www.geeksforgeeks.org/python-open-function/))
+<p><a href="#spoiler What flags can you specify in the open function?">Hint 1</a></p>
+<p><a href="#spoiler In our example code, we specified the flag `r`. What does this mean?">Hint 2</a></p>
+<p><a href="#spoiler What flag could we use to represent write?">Hint 3</a></p>
+<p><a href="#spoiler Time to go back to google. Geeks4Geeks sometimes has good information:   
+[https://www.geeksforgeeks.org/python-open-function/](https://www.geeksforgeeks.org/python-open-function/">Hint 4</a>)</p>
 
 *To test your code, run:*
 ```
