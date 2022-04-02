@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+Taught by Drshika Asher, Justin Hu, and Joanna Huang
 
-You can use the [editor on GitHub](https://github.com/drshika/gjournal/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+------------------------------------------
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Getting Ready
 
-### Markdown
+### Local Machine Instructions
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+1. Download a **text editor** (VSCode: https://code.visualstudio.com/download) and make sure you have a version of **python** greater than 3.0 and https://pip.pypa.io/en/stable/installation/ installed. To check your python version, run the following command:
+```bash
+   $  python --version
+```
+- Tutorial for Windows: https://feaforall.com/how-to-install-python-3-on-windows-and-set-the-path/
+- Tutorial for Mac: https://www.educative.io/edpresso/how-to-add-python-to-the-path-variable-in-mac
+- Install Pip: https://pip.pypa.io/en/stable/installation/
+2. Clone starter code
+```bash
+    $ git clone https://github.com/drshika/gjournal.git
+```
+3. Open folder in VSCode
+```bash
+    $ code .
+```
+or open VSCode, File >> Open Folder >> choose the gjournal directory
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+![open in vscode](_images/vscodeimport.png)
+4. Install requirements
+Run the following in your terminal
+```bash
+    $ pip install -r requirements.txt
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Repl.it Instructions
+Just in case your local machine does not work for some reason.
+1. Log onto your [https://replit.com/~](https://replit.com/~)
+2. Create Repl 
+![create repl](_images/createrepl.png)
+![create repl pt 2](_images/createrepl2.png)
+3. Install requirements
+Run the following in your console
+```bash
+    $ pip install -r requirements.txt
+```
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/drshika/gjournal/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Extras:
 
-### Support or Contact
+2. Learn a bit of git on the commmand line. You can use any intro tutorial, but [this web browser one](https://learngitbranching.js.org/) looks good.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+3. Learn some basics of how a command line works. [Here is a quick crash course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) with links to resources to learn even more. The command line is intimidating, but once you get used to it, you'll wonder how you lived without it. It's part of almost every programmer's toolbox.
+
+# Workshop
+
+Justin, Drshika, and Joanna were too busy with their algorithms class and procrastinated creating this workshop! Oh no! Now, we need **YOUR** help to fix some bugs, write some functions and create a wholesome gratitude journal for your command line. 
+
+You will learn how to work with different Python Libraries, read test outputs and documentation, read existing code and integrate your work into the code base.
+
+Prior Knowledge: Intermediate/Advanced Programming
+
+Note: I've done this on MacOs Monterey 12.1 but you should be able to do this on any computer. Your progress shouldn't be drastically different, but you may need to adjust depending on how your OS does things. I used `python 3.9.9`.
+
+# Background
+
