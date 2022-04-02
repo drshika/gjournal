@@ -5,7 +5,7 @@ Tutorial: https://drshika.github.io/gjournal/
 ---
 
 ### Setup
-Clone this repo to your desktop and run `pip install -r requirements.txt` to install all the dependencies.
+Clone this repo to your desktop and run `pip install -r requirements.txt` and `pip install -u pytest` to install all the dependencies.
 
 
 
