@@ -1,7 +1,7 @@
 ---
 ---
 <style>
-    a[href="#spoiler"] {
+a[href="#spoiler"] {
     text-decoration: none !important;
     cursor: default;
     margin-bottom: 10px;
@@ -9,18 +9,18 @@
     background-color: #FFF8DC;
     border-left: 2px solid #ffeb8e;
     display: inline-block;
-  }
-  a[href="#spoiler"]::after {
+}
+a[href="#spoiler"]::after {
     content: attr(title);
     color: #FFF8DC;
     padding: 0 0.5em;
-  }
-  a[href="#spoiler"]:hover::after,
-  a[href="#spoiler"]:active::after {
+}
+a[href="#spoiler"]:hover::after,
+a[href="#spoiler"]:active::after {
     cursor: auto;
     color: black;
     transition: color .5s ease-in-out;
-  }
+}
 </style>
 
 Taught by Drshika Asher, Justin Hu, and Joanna Huang
@@ -48,7 +48,7 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 ```
 or open VSCode, File >> Open Folder >> choose the gjournal directory
 
-![open in vscode](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/vscodeimport.png)
+![open in vscode](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/vscodeimport.png?raw=true)
 4. Install requirements
 Run the following in your terminal
 ```bash
@@ -64,8 +64,8 @@ Run the following in your terminal
 Just in case your local machine does not work for some reason.
 1. Log onto your [https://replit.com/~](https://replit.com/~)
 2. Create Repl 
-![create repl](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl.png)
-![create repl pt 2](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl2.png)
+![create repl](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl.png?raw=true)
+![create repl pt 2](https://github.com/drshika/gjournal/blob/gh-pages/assets/images/createrepl2.png?raw=true)
 3. Install requirements
 Run the following in your console
 ```bash
