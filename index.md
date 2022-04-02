@@ -60,4 +60,66 @@ Prior Knowledge: Intermediate/Advanced Programming
 Note: I've done this on MacOs Monterey 12.1 but you should be able to do this on any computer. Your progress shouldn't be drastically different, but you may need to adjust depending on how your OS does things. I used `python 3.9.9`.
 
 # Background
+## Files
+In the directory, we have provided you with some starter files for the project. Here is a short explainer of what each of them are:
 
+- sail directory
+    - contains the api that has some helpers for this workshop
+- sail_journal
+    - contains journal entries
+- .gitignore
+    - tells git what files to ignore
+- LICENSE
+    - allows other people to modify and extend our code!
+    - learn more about open source licenses! [https://opensource.org/licenses](https://opensource.org/licenses)
+- functions.py
+    - helper functions for our code
+- journal.py
+    - main file with all the functions that runs the journal cli
+- requirements.txt 
+    - libraries that our program requires to run
+
+### Libraries
+In the file called `requirements.txt`, we have provided the names of libraries needed to run the cli. This is a common convention in Python projects.
+
+```js
+questionary
+datetime
+pyyaml
+pyfiglet
+plumbum
+ruamel.yaml
+```
+
+Running the command we did earlier installs these packages all at once (if you use `python3` to execute commands, then use `pip3`):
+
+```bash
+$ pip install -r requirements.txt
+[install output]
+```  
+
+The `-r` flag tells `pip` to look at `requirements.txt` and install everything in it.
+
+Let me explain how we're using each library.
+
+* [questionary](https://github.com/tmbo/questionary) give us fancy interactive menu interfaces.
+* [pyfiglet](https://github.com/pwaller/pyfiglet) provides ASCII art displays.
+* [plumbum](https://plumbum.readthedocs.io/en/latest/) gives us a way of accepting input, displaying help information and calling existing system commands.
+* [pyyaml](https://pyyaml.org/wiki/PyYAMLDocumentation) allows us to set a filepath and your name
+* [datetime](https://pypi.org/project/DateTime/) gives us the date and time
+* [ruaeml.yaml](https://pypi.org/project/ruamel.yaml/) extends capabilities of pyyaml and allows us to format strings properly
+
+## What the code does
+
+### Logical Level
+Let's imagine this gratitude journal in real life. Here are some steps you may take:
+
+1. Get a Journal
+2. Open the Journal to the right page (for today)
+3. Journal
+4. Close the Journal
+5. View past Journals
+
+We tried imitating these steps in our code, but some of them are incomplete/buggy. Can you help us fix them? 
+
+Yes you can! You're a UIUC CS student and you're super smart and can solve these problems hehe
