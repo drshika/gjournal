@@ -89,6 +89,7 @@ pyyaml
 pyfiglet
 plumbum
 ruamel.yaml
+pytest
 ```
 
 Running the command we did earlier installs these packages all at once (if you use `python3` to execute commands, then use `pip3`):
@@ -108,6 +109,11 @@ Let me explain how we're using each library.
 * [pyyaml](https://pyyaml.org/wiki/PyYAMLDocumentation) allows us to set a filepath and your name
 * [datetime](https://pypi.org/project/DateTime/) gives us the date and time
 * [ruaeml.yaml](https://pypi.org/project/ruamel.yaml/) extends capabilities of pyyaml and allows us to format strings properly
+* [pytest](https://docs.pytest.org/en/6.2.x/) allows us to test our code and make sure everything is running
+
+```bash
+    $ pytest --tb=no
+```
 
 ## What the code does
 
@@ -123,3 +129,16 @@ Let's imagine this gratitude journal in real life. Here are some steps you may t
 We tried imitating these steps in our code, but some of them are incomplete/buggy. Can you help us fix them? 
 
 Yes you can! You're a UIUC CS student and you're super smart and can solve these problems hehe
+
+### Implementation
+Now, here is the translation of those basic journal functionalities into code.
+
+**Main Journal functions:**
+1. `pick_journal`
+    - Help the user get a journal with their name and store it in their location
+2. `write_journal`
+    - Open the right entry and allow the user to write what they are grateful for
+3. `add_content`
+    - Give the user a prompt to journal on and collect their thoughts
+4. `read_entries`
+    - Let the user "flip" through their digital journal entries
