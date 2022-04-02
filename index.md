@@ -189,10 +189,9 @@ We get a `FileExistsErrors`! Can you guess what is causing the error?
 
 In professional programming, we like to handle errors nicely and not rely on the compiler to catch our mistakes. So how do we make the error message more helpful?
 
-<p><a href="#spoiler How do we handle errors in Python?">Hint 1</a></p>
-<p><a href="#spoiler What kind of error is this?">Hint 2</a></p>
-<p><a href="#spoiler If you have no clue how to do something, google! StackOverflow is a really valuable resource. Here&#39;s a link to get you started:   
-[https://stackoverflow.com/questions/4592162/python-exception-handling](https://stackoverflow.com/questions/4592162/python-exception-handling">Hint 3</a>)</p>
+<details><summary>Hint 1</summary>How do we handle errors in Python?</details>
+<details><summary>Hint 2</summary>What kind of error is this?</details>
+<details><summary>Hint 3</summary>If you have no clue how to do something, google! StackOverflow is a really valuable resource. Here&#39;s a link to get you started: [https://stackoverflow.com/questions/4592162/python-exception-handling](https://stackoverflow.com/questions/4592162/python-exception-handling)</details>
 
 **Test Case #2: Writing Entries**
 
@@ -202,11 +201,11 @@ Try the following:
 
 What??? I'm getting a `io.UnsupportedOperation: not writable` error?
 
-<p><a href="#spoiler What flags can you specify in the open function?">Hint 1</a></p>
-<p><a href="#spoiler In our example code, we specified the flag `r`. What does this mean?">Hint 2</a></p>
-<p><a href="#spoiler What flag could we use to represent write?">Hint 3</a></p>
-<p><a href="#spoiler Time to go back to google. Geeks4Geeks sometimes has good information:   
-[https://www.geeksforgeeks.org/python-open-function/](https://www.geeksforgeeks.org/python-open-function/">Hint 4</a>)</p>
+<details><summary>Hint 1</summary>What flags can you specify in the open function?</details>
+<details><summary>Hint 2</summary>In our example code, we specified the flag `r`. What does this mean?</details>
+<details><summary>Hint 3</summary>What flag could we use to represent write?</details>
+<details><summary>Hint 4</summary>Time to go back to google. Geeks4Geeks sometimes has good information:   
+[https://www.geeksforgeeks.org/python-open-function/](https://www.geeksforgeeks.org/python-open-function/)</details>
 
 *To test your code, run:*
 ```
@@ -218,31 +217,45 @@ $ pytest --tb=no
 
 Let's allow our users to read what they have written in the past. We've been able to write to a file or open a file, but we don't yet have a way to read the contents of a file. Let's fix that. 
 
-*Hint 1: Your function should return the contents of the file.*
+<details>
+<summary>Hint 1</summary>
+Your function should return the contents of the file
+</details>
 
-*Hint 2: How do you open a file?*
+<details>
+<summary>Hint 2</summary>
+How do you open a file?
+</details>
 
-*Hint 3: What flag should you use for this?*
+<details>
+<summary>Hint 3</summary>
+What flag should you use for this?
+</details>
 
 **Impl #2: Writing in journal**
 
 Copy your implementation of `write_file()` to `add_to_file()`. What modifications do you need to make so that the function behaves properly?
 
-*Hint 1: Your function should not overwrite the old contents in the file*
+<details>
+<summary>Hint 1</summary> Your function should not overwrite the old contents in the file</details>
 
-*Hint 2: How do you open a file?*
+<details>
+<summary>Hint 2</summary> How do you open a file?</details>
 
-*Hint 3: What flag should you use for this?*
+<details>
+<summary>Hint 3</summary> What flag should you use for this?</details>
 
 **Impl #3: Fancy Print**
 
 Now, let's jazz up our CLI by adding a fancy greeting for our users! We'll use `Figlet` from the `pyfiglet` library to select a font and `plumbum` to choose a color. Currently, our app prints out plain text and then asks the user for their choice of what to do. 
 
-*Hint 1: When you don't know how to use a strange library, googling the documentation is your best friend*
+<details>
+<summary>Hint 1</summary> When you don't know how to use a strange library, googling the documentation is your best friend</details>
 
-*Hint 2: See the [Libraries](#libraries) section for the links to the documentation for each library we use here*
+<details>
+<summary>Hint 2</summary> See the [Libraries](#libraries) section for the links to the documentation for each library we use here</details>   
 
-*To test your code, run:*
+To test your code, run:
 ```
 $ pytest --tb=no
 ```
