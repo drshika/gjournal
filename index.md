@@ -1,3 +1,7 @@
+---
+---
+@import "main.css";
+
 Taught by Drshika Asher, Justin Hu, and Joanna Huang
 
 ------------------------------------------
@@ -6,7 +10,7 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 
 ### Local Machine Instructions
 
-1. Download a **text editor** (VSCode: https://code.visualstudio.com/download) and make sure you have a version of **python** greater than 3.0 and https://pip.pypa.io/en/stable/installation/ installed. To check your python version, run the following command:
+1. Download a **text editor** (VSCode: https://code.visualstudio.com/download) and make sure you have a version of **python** greater than 3.0 and https://pip.pypa.io/en/stable/installation/ installed. To check your Python version, run the following command:
 ```bash
    $  python --version
 ```
@@ -17,7 +21,7 @@ Taught by Drshika Asher, Justin Hu, and Joanna Huang
 ```bash
     $ git clone https://github.com/drshika/gjournal.git
 ```
-3. Open folder in VSCode
+3. Open the folder in VSCode
 ```bash
     $ code .
 ```
@@ -28,6 +32,11 @@ or open VSCode, File >> Open Folder >> choose the gjournal directory
 Run the following in your terminal
 ```bash
     $ pip install -r requirements.txt
+```
+5. Install pytest globally so that you can test your code:
+
+```bash
+    $ pip install -u pytest
 ```
 
 ### Repl.it Instructions
@@ -41,46 +50,50 @@ Run the following in your console
 ```bash
     $ pip install -r requirements.txt
 ```
+4. Install pytest globally so that you can test your code:
 
+```bash
+    $ pip install -u pytest
+```
 
 ### Extras:
 
-2. Learn a bit of git on the commmand line. You can use any intro tutorial, but [this web browser one](https://learngitbranching.js.org/) looks good.
+2. Learn a bit of git on the command line. You can use any intro tutorial, but [this web browser one](https://learngitbranching.js.org/) looks good.
 
-3. Learn some basics of how a command line works. [Here is a quick crash course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) with links to resources to learn even more. The command line is intimidating, but once you get used to it, you'll wonder how you lived without it. It's part of almost every programmer's toolbox.
+3. Learn some basics of how a command line works. [Here is a quick crash course](https://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course) with links to resources to learn even more. The command line is intimidating, but you'll wonder how you lived without it once you get used to it. It's part of almost every programmer's toolbox.
 
 # Workshop
 
-Justin, Drshika, and Joanna were too busy with their algorithms class and procrastinated creating this workshop! Oh no! Now, we need **YOUR** help to fix some bugs, write some functions and create a wholesome gratitude journal for your command line. 
+Justin, Drshika, and Joanna were too busy with their algorithms class and procrastinated creating this workshop! Oh no! We need **YOUR** help to fix some bugs, write some functions and create a wholesome gratitude journal for your command line. 
 
-You will learn how to work with different Python Libraries, read test outputs and documentation, read existing code and integrate your work into the code base.
+You will learn to work with different Python Libraries, read test outputs and documentation, read existing code and integrate your work into the codebase.
 
 Prior Knowledge: Intermediate/Advanced Programming
 
-Note: I've done this on MacOs Monterey 12.1 but you should be able to do this on any computer. Your progress shouldn't be drastically different, but you may need to adjust depending on how your OS does things. I used `python 3.9.9`.
+*Note:* I've done this on MacOs Monterey 12.1, but you should be able to do this on any computer. Your progress shouldn't be drastically different, but you may need to adjust depending on your OS. I used `python 3.9.9`.
 
 # Background
 ## Files
-In the directory, we have provided you with some starter files for the project. Here is a short explainer of what each of them are:
+We have provided you with some starter files for the project in the directory. Here is a short explainer of what each of them is:
 
 - sail directory
-    - contains the api that has some helpers for this workshop
+    - contains the API that has some helpers for this workshop
 - sail_journal
     - contains journal entries
 - .gitignore
     - tells git what files to ignore
 - LICENSE
     - allows other people to modify and extend our code!
-    - learn more about open source licenses! [https://opensource.org/licenses](https://opensource.org/licenses)
+    - learn more about oopen-source licenses! [https://opensource.org/licenses](https://opensource.org/licenses)
 - functions.py
     - helper functions for our code
 - journal.py
-    - main file with all the functions that runs the journal cli
+    - main file with all the functions that run the journal cli
 - requirements.txt 
     - libraries that our program requires to run
 
 ### Libraries
-In the file called `requirements.txt`, we have provided the names of libraries needed to run the cli. This is a common convention in Python projects.
+In the file called `requirements.txt`, we have provided the names of libraries needed to run the cli. Creating a requirements file is a standard convention in Python projects.
 
 ```js
 questionary
@@ -104,16 +117,12 @@ The `-r` flag tells `pip` to look at `requirements.txt` and install everything i
 Let me explain how we're using each library.
 
 * [questionary](https://github.com/tmbo/questionary) give us fancy interactive menu interfaces.
-* [pyfiglet](https://github.com/pwaller/pyfiglet) provides ASCII art displays.
-* [plumbum](https://plumbum.readthedocs.io/en/latest/) gives us a way of accepting input, displaying help information and calling existing system commands.
+* [pyfiglet](https://github.com/pwaller/pyfiglet) provides ASCII art displays. See fonts [here](http://www.figlet.org/examples.html)
+* [plumbum](https://plumbum.readthedocs.io/en/latest/) gives us a way of accepting input, displaying help information, and calling existing system commands.
 * [pyyaml](https://pyyaml.org/wiki/PyYAMLDocumentation) allows us to set a filepath and your name
 * [datetime](https://pypi.org/project/DateTime/) gives us the date and time
-* [ruaeml.yaml](https://pypi.org/project/ruamel.yaml/) extends capabilities of pyyaml and allows us to format strings properly
+* [ruaeml.yaml](https://pypi.org/project/ruamel.yaml/) extends the capabilities of pyyaml and allows us to format strings properly
 * [pytest](https://docs.pytest.org/en/6.2.x/) allows us to test our code and make sure everything is running
-
-```bash
-    $ pytest --tb=no
-```
 
 ## What the code does
 
@@ -128,7 +137,7 @@ Let's imagine this gratitude journal in real life. Here are some steps you may t
 
 We tried imitating these steps in our code, but some of them are incomplete/buggy. Can you help us fix them? 
 
-Yes you can! You're a UIUC CS student and you're super smart and can solve these problems hehe
+Yes, you can! You're a U of I CS student, and you're super bright and can solve these problems hehe
 
 ### Implementation
 Now, here is the translation of those basic journal functionalities into code.
@@ -139,6 +148,96 @@ Now, here is the translation of those basic journal functionalities into code.
 2. `write_journal`
     - Open the right entry and allow the user to write what they are grateful for
 3. `add_content`
-    - Give the user a prompt to journal on and collect their thoughts
+    - Give the user a prompt to journal and collect their thoughts
 4. `read_entries`
     - Let the user "flip" through their digital journal entries
+
+## Fixing the code
+Your task, if you choose to accept it, will be to fix some bugs, implement some functions and add some aesthetic improvements and your creative touches :sparkles:
+
+### 1. Squash the Bugs!
+
+**Test Case #1: Making Folders**
+
+Try the following:
+
+1. Pick a journal with the name `"Student A"` and the path `"student"`.
+2. Pick a journal with the name `"Student B"` and the path `"student"`.
+
+We get a `FileExistsErrors`! Can you guess what is causing the error? 
+
+In professional programming, we like to handle errors nicely and not rely on the compiler to catch our mistakes. So how do we make the error message more helpful?
+
+[Hint 1](#spoiler How do we handle errors in Python?)
+
+[Hint 2](#spoiler What kind of error is this?)
+
+[Hint 3](#spoiler If you have no clue how to do something, google! StackOverflow is a really valuable resource. Here's a link to get you started:   
+[https://stackoverflow.com/questions/4592162/python-exception-handling](https://stackoverflow.com/questions/4592162/python-exception-handling))
+
+**Test Case #2: Writing Entries**
+
+Try the following:
+1. Pick a journal with any name and path you'd like!
+2. Write a journal entry.
+
+What??? I'm getting a `io.UnsupportedOperation: not writable` error?
+
+[Hint 1](#spoiler What flags can you specify in the open function?)
+
+[Hint 2](#spoiler In our example code, we specified the flag `r`. What does this mean?)
+
+[Hint 3](#spoiler What flag could we use to represent write?)
+
+[Hint 4](#spoiler Time to go back to google. Geeks4Geeks sometimes has good information:   
+[https://www.geeksforgeeks.org/python-open-function/](https://www.geeksforgeeks.org/python-open-function/))
+
+*To test your code, run:*
+```
+$ pytest --tb=no
+```
+### 2. Write the Functions!
+
+**Impl #1: Reading entries**
+
+Let's allow our users to read what they have written in the past. We've been able to write to a file or open a file, but we don't yet have a way to read the contents of a file. Let's fix that. 
+
+*Hint 1: Your function should return the contents of the file.*
+
+*Hint 2: How do you open a file?*
+
+*Hint 3: What flag should you use for this?*
+
+**Impl #2: Writing in journal**
+
+Copy your implementation of `write_file()` to `add_to_file()`. What modifications do you need to make so that the function behaves properly?
+
+*Hint 1: Your function should not overwrite the old contents in the file*
+
+*Hint 2: How do you open a file?*
+
+*Hint 3: What flag should you use for this?*
+
+**Impl #3: Fancy Print**
+
+Now, let's jazz up our CLI by adding a fancy greeting for our users! We'll use `Figlet` from the `pyfiglet` library to select a font and `plumbum` to choose a color. Currently, our app prints out plain text and then asks the user for their choice of what to do. 
+
+*Hint 1: When you don't know how to use a strange library, googling the documentation is your best friend*
+
+*Hint 2: See the [Libraries](#libraries) section for the links to the documentation for each library we use here*
+
+*To test your code, run:*
+```
+$ pytest --tb=no
+```
+### 3. Extra Credit!
+
+Using your newfound knowledge, let's implement the "I'm Feeling Lucky" option!
+
+Pick a random journal entry, and show a snippet of it to the user!
+
+We're not going to provide hints for this one. So instead, try to google around yourself and see what you can create. Good luck, have fun!
+
+## Acknowledgements
+
+Thank you so much for joining us for this workshop. Thanks to Harsh Deep & Monica Para (cofounder of 125 Summer of Side Projects: [https://125summer.tech/](https://125summer.tech/)) and [Candace Williams](https://medium.com/thebit/intro-to-file-i-o-and-terminal-usage-how-to-create-a-journal-using-python-7bf1ccf1549a) for a lot of language, explanations, and packages used to create this workshop. ILL!
